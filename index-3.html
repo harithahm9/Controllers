@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tutorialApp">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body ng-controller="TutorialController">
+    <p>one way binding: {{text}}</p>
+    <p>two way binding:<input type="text" ng-model="name"></p>
+    <p>the updated model value is:{{name}}</p>
+    <p ng-show="show">this content will show-1 ng-show={{show}}</p>
+    <p ng-show="!show">this content will hide-2 ng-show=not {{show}}</p>
+    <p ng-hide="hide">this content will show-3 ng-hide={{hide}}</p>
+    <p ng-hide="!hide">this content will hide-4 ng-hide= not {{hide}}</p>
+    <p ng-if="condi">I show or hide depending on condi</p>
+    <p ng-repeat="student in students">{{student}}</p>
+    <p ng-class="error?'error-text':''">Im error text</p>
+    <p ng-class="{'error-text':error}">Im error text</p>
+
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="scripts/app-3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    
+    
+     <div ng-app="hospitalApp">
+        <div ng-controller="ControllerA">
+            <h1>ControllerA</h1>
+            <h2>{{student}}</h2>
+        </div>
+        <div ng-controller="ControllerB">
+            <h1>ControllerB</h1>
+            <h2>{{teacher}}</h2>
+        </div>
+        <div ng-app="pharmacyApp">
+        <div ng-controller="ControllerC">
+            <h1>ControllerC</h1>
+            <h2>{{doctor}}</h2>
+        </div>
+        <div ng-controller="ControllerD">
+            <h1>ControllerD</h1>
+            <h2>{{patient}}</h2>
+        </div>
+    </div>
+    </div>
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
